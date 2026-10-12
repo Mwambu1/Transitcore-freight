@@ -36,14 +36,10 @@ export default function Home() {
               <a className="text-link light" href="#services">Explore services <span>↓</span></a>
             </div>
           </div>
-          <div className="route-card" aria-label="TransitCore logistics network">
-            <div className="route-label">OUR REACH</div>
-            <div className="map-line map-line-one"></div><div className="map-line map-line-two"></div>
-            <div className="location location-zm"><b></b><span>ZAMBIA</span></div>
-            <div className="location location-sa"><b></b><span>SOUTHERN AFRICA</span></div>
-            <div className="location location-ea"><b></b><span>EASTERN AFRICA</span></div>
-            <div className="route-footer"><span>Regional logistics</span><strong>01 / 03</strong></div>
-          </div>
+          <figure className="hero-photo">
+            <img src="/images/freight-terminal-hero.png" alt="Blue freight truck and containers at a port terminal" />
+            <figcaption><span>OUR REACH</span><strong>Zambia · Southern & Eastern Africa</strong></figcaption>
+          </figure>
         </div>
         <div className="hero-footer wrap"><span>Customs clearance</span><span>Cross-border logistics</span><span>Supply chain support</span></div>
       </section>
@@ -64,7 +60,7 @@ export default function Home() {
       </section>
 
       <section className="promise wrap">
-        <div className="promise-number">TC<span>.</span></div>
+        <figure className="warehouse-photo"><img src="/images/warehouse-distribution.png" alt="Warehouse team coordinating cargo and distribution" /></figure>
         <div><p className="eyebrow">The TransitCore approach</p><h2>Clear coordination.<br /><em>Confident delivery.</em></h2></div>
         <p>From a single shipment to a broader supply-chain need, we bring a practical, responsive approach to every move.</p>
       </section>
