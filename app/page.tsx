@@ -1,4 +1,6 @@
-const services = [
+type Service = readonly [number: string, title: string, description: string];
+
+const services: readonly Service[] = [
   ['01', 'Customs clearing', 'Helping your goods move through customs with clear, careful coordination.'],
   ['02', 'Import & export documentation', 'Supporting the documents that keep cross-border trade moving.'],
   ['03', 'Cargo handling', 'Practical coordination for cargo at every point in its journey.'],
@@ -55,7 +57,7 @@ export default function Home() {
       <section className="services" id="services">
         <div className="wrap">
           <div className="section-head"><div><p className="eyebrow">What we do</p><h2>Built around the<br /><em>journey of your cargo.</em></h2></div><p>One dependable partner for the essential parts of your logistics operation.</p></div>
-          <div className="service-grid">{services.map(([number, title, text]) => <article className="service" key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p><a href="#contact" aria-label={`Ask about ${title}`}><Arrow /></a></article>)}</div>
+          <div className="service-grid">{services.map(([number, title, description]) => <article className="service" key={number}><span>{number}</span><h3>{title}</h3><p>{description}</p><a href="#contact" aria-label={`Ask about ${title}`}><Arrow /></a></article>)}</div>
         </div>
       </section>
 
