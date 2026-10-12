@@ -2,5 +2,6 @@ node_modules/
 .next/
 out/
 transitcore-site.tar.gz
+.sites-runtime/
 .env*
 !.env.example
